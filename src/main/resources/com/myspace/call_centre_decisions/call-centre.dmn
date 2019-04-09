@@ -3,6 +3,15 @@
   <dmn:extensionElements/>
   <dmn:decision id="_F16A023A-7045-40E0-93E3-7C9C07364E06" name="Accept Call">
     <dmn:variable id="_8A04BF85-9AE8-44FB-96F5-3FBD637F901B" name="Accept Call" typeRef="boolean"/>
+    <dmn:informationRequirement id="_5061D014-B227-4D39-8002-51E586B70944">
+      <dmn:requiredInput href="#_4DE45855-F048-4203-BBC3-D523694A7781"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_59AA7F0B-98B9-410E-852E-1781CCCF07BB">
+      <dmn:requiredInput href="#_23CF95B3-7C35-43ED-B311-3F236780B7C5"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_75F7BED3-A018-4FC1-9806-65E888E241FD">
+      <dmn:requiredInput href="#_AA4F6E5E-E6B0-4595-B830-CDD5308A2350"/>
+    </dmn:informationRequirement>
     <dmn:literalExpression/>
   </dmn:decision>
   <dmn:inputData id="_AA4F6E5E-E6B0-4595-B830-CDD5308A2350" name="incoming call">
@@ -55,6 +64,18 @@
         <dc:Bounds x="313" y="263" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_5061D014-B227-4D39-8002-51E586B70944" dmnElementRef="_5061D014-B227-4D39-8002-51E586B70944">
+        <di:waypoint x="313" y="288"/>
+        <di:waypoint x="323" y="149"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_59AA7F0B-98B9-410E-852E-1781CCCF07BB" dmnElementRef="_59AA7F0B-98B9-410E-852E-1781CCCF07BB">
+        <di:waypoint x="305.29906542056074" y="288"/>
+        <di:waypoint x="223" y="149"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_75F7BED3-A018-4FC1-9806-65E888E241FD" dmnElementRef="_75F7BED3-A018-4FC1-9806-65E888E241FD">
+        <di:waypoint x="197.5981308411215" y="288"/>
+        <di:waypoint x="223" y="149"/>
+      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
