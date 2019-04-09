@@ -1,15 +1,42 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://github.com/kiegroup/drools/kie-dmn/_A1CC2DE5-286F-48FF-8D9E-71829C18498C" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_0B32E71A-1CB4-4186-B475-03E46F253605" name="call-centre" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://github.com/kiegroup/drools/kie-dmn/_A1CC2DE5-286F-48FF-8D9E-71829C18498C">
   <dmn:extensionElements/>
-  <dmn:decision id="_F16A023A-7045-40E0-93E3-7C9C07364E06" name="Accept CAll">
-    <dmn:variable id="_8A04BF85-9AE8-44FB-96F5-3FBD637F901B" name="Accept CAll"/>
+  <dmn:decision id="_F16A023A-7045-40E0-93E3-7C9C07364E06" name="Accept Call">
+    <dmn:variable id="_8A04BF85-9AE8-44FB-96F5-3FBD637F901B" name="Accept Call" typeRef="boolean"/>
     <dmn:literalExpression/>
   </dmn:decision>
+  <dmn:inputData id="_AA4F6E5E-E6B0-4595-B830-CDD5308A2350" name="incoming call">
+    <dmn:variable id="_58BF51C6-1809-4639-AFA0-47266DBFDF71" name="incoming call"/>
+  </dmn:inputData>
+  <dmn:inputData id="_23CF95B3-7C35-43ED-B311-3F236780B7C5" name="office">
+    <dmn:variable id="_02558190-DBE2-4488-9492-969AAAA405A9" name="office"/>
+  </dmn:inputData>
+  <dmn:inputData id="_4DE45855-F048-4203-BBC3-D523694A7781" name="employees">
+    <dmn:variable id="_D63ADDB2-A5F0-42FC-87BD-F92794F928DE" name="employees"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension/>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-_23CF95B3-7C35-43ED-B311-3F236780B7C5" dmnElementRef="_23CF95B3-7C35-43ED-B311-3F236780B7C5" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="205.29906542056074" y="263" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_AA4F6E5E-E6B0-4595-B830-CDD5308A2350" dmnElementRef="_AA4F6E5E-E6B0-4595-B830-CDD5308A2350" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="97.5981308411215" y="263" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_F16A023A-7045-40E0-93E3-7C9C07364E06" dmnElementRef="_F16A023A-7045-40E0-93E3-7C9C07364E06" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -17,6 +44,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="223" y="124" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_4DE45855-F048-4203-BBC3-D523694A7781" dmnElementRef="_4DE45855-F048-4203-BBC3-D523694A7781" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="313" y="263" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
     </dmndi:DMNDiagram>
